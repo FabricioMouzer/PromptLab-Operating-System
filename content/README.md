@@ -32,6 +32,7 @@ Cada publicação deve conter:
 ## Profissões já documentadas
 
 - [Arquitetos](./arquitetos/)
+- [Chefs e cozinheiros](./chefs-e-cozinheiros/)
 - [Corretores de imóveis](./corretores-de-imoveis/)
 - [Fotógrafos](./fotografos/)
 - [Gestor de Projetos](./gestor-de-projetos/)
