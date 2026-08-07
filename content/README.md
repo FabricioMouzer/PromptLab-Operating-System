@@ -33,6 +33,7 @@ Cada publicação deve conter:
 
 - [Arquitetos](./arquitetos/)
 - [Corretores de imóveis](./corretores-de-imoveis/)
+- [Fotógrafos](./fotografos/)
 - [Gestor de Projetos](./gestor-de-projetos/)
 - [Professores](./professores/)
 - [Vendedores e empreendedores](./vendedores-e-empreendedores/)
