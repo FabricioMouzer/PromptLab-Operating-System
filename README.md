@@ -54,6 +54,7 @@ templates/
 
 - [Kit técnico de IA open source](docs/technology/open-source-ai-kit/README.md)
 - [Agente de criação e publicação social](docs/agents/social-publishing-agent/README.md)
+- [Automação n8n pronta para importar](automation/n8n/social-publishing/README.md)
 - [Avaliação dos repositórios de automação social](docs/agents/social-publishing-agent/repository-evaluation.md)
 
 ## Princípios
