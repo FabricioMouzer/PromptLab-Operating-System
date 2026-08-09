@@ -148,6 +148,10 @@ Canva e HeyGen não estão incorporados automaticamente nesses workflows porque 
 
 Os workflows são modelos importáveis e foram validados estruturalmente e como JSON. A execução ponta a ponta depende das credenciais, do workflow publicado no Dify, das contas conectadas ao Postiz e das aprovações das plataformas.
 
+## Plano de execução
+
+- [Plano de ativação por tarefas](../../../docs/operations/2026-08-10-social-automation-activation-plan.md)
+
 ## Referências oficiais
 
 - [n8n Webhook](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/)
