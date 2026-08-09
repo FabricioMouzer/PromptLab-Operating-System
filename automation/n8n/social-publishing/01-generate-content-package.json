@@ -1,0 +1,116 @@
+{
+  "name": "PromptLab Social 01 - Gerar pacote de conteúdo",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "promptlab-social-generate",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "0f79607f-25bd-4fb5-bf02-f223806f31f1",
+      "name": "Webhook - Solicitar conteúdo",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [0, 0],
+      "webhookId": "6fc3a8a8-bd3b-4adc-91f3-74fe9930dc22",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_WEBHOOK_CREDENTIAL",
+          "name": "PromptLab Social Webhook"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $json.body ?? $json;\nconst aliases = {\n  promptlab: 'promptlab',\n  'promptlab.ai': 'promptlab',\n  promptlive: 'promptlab',\n  proptlive: 'promptlab',\n  zelovita: 'zelovita'\n};\nconst brandKey = String(raw.brand ?? '').trim().toLowerCase();\nconst brand = aliases[brandKey];\nif (!brand) throw new Error('brand deve ser promptlab ou zelovita');\nconst topic = String(raw.topic ?? '').trim();\nif (topic.length < 3) throw new Error('topic é obrigatório');\nconst allowedPlatforms = ['instagram', 'facebook', 'tiktok'];\nconst requested = Array.isArray(raw.platforms) && raw.platforms.length ? raw.platforms : allowedPlatforms;\nconst platforms = [...new Set(requested.map(v => String(v).toLowerCase()))];\nif (platforms.some(v => !allowedPlatforms.includes(v))) throw new Error('plataforma inválida');\nconst requestId = String(raw.request_id ?? `social-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);\nreturn [{ json: {\n  request_id: requestId,\n  brand,\n  topic,\n  objective: String(raw.objective ?? ''),\n  audience: String(raw.audience ?? ''),\n  platforms,\n  format: String(raw.format ?? 'feed'),\n  source_urls: Array.isArray(raw.source_urls) ? raw.source_urls : [],\n  affiliate_url: raw.affiliate_url ?? null,\n  notes: String(raw.notes ?? ''),\n  language: 'pt-BR'\n} }];"
+      },
+      "id": "ae3cda1f-c636-405a-8ba8-534ae83c4ae6",
+      "name": "Normalizar e validar",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.dify.ai/v1/workflows/run",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { inputs: { request_id: $json.request_id, brand: $json.brand, topic: $json.topic, objective: $json.objective, audience: $json.audience, platforms_json: JSON.stringify($json.platforms), format: $json.format, source_urls_json: JSON.stringify($json.source_urls), affiliate_url: $json.affiliate_url || '', notes: $json.notes, language: $json.language }, response_mode: 'blocking', user: 'fabricio-social-automation' } }}",
+        "options": {
+          "timeout": 90000
+        }
+      },
+      "id": "b383ae18-8ed0-4631-9009-ac8f1bd3bc5c",
+      "name": "Dify - Gerar conteúdo",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [480, 0],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_DIFY_CREDENTIAL",
+          "name": "Dify App API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const dify = $json;\nconst original = $('Normalizar e validar').first().json;\nif (dify?.data?.status && dify.data.status !== 'succeeded') {\n  throw new Error(`Dify falhou: ${dify.data.error || dify.data.status}`);\n}\nlet result = dify?.data?.outputs?.result ?? dify?.data?.outputs?.output ?? dify?.data?.outputs;\nif (typeof result === 'string') {\n  const cleaned = result.replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/, '').trim();\n  try { result = JSON.parse(cleaned); } catch { throw new Error('Dify não retornou JSON válido'); }\n}\nif (!result || typeof result !== 'object') throw new Error('Dify não retornou um objeto');\nif (!Array.isArray(result.channels) || result.channels.length === 0) throw new Error('Dify não retornou channels');\nconst channels = result.channels.map(channel => ({\n  ...channel,\n  platform: String(channel.platform || '').toLowerCase(),\n  provider_integration_id: null,\n  media_status: channel.media_status || 'pending',\n  media: Array.isArray(channel.media) ? channel.media : []\n}));\nreturn [{ json: {\n  ...result,\n  request_id: original.request_id,\n  brand: original.brand,\n  topic: original.topic,\n  language: 'pt-BR',\n  source_urls: original.source_urls,\n  affiliate_url: original.affiliate_url,\n  approval_status: 'pending',\n  approved: false,\n  channels,\n  generation: {\n    provider: 'dify',\n    workflow_run_id: dify.workflow_run_id || dify?.data?.id || null,\n    generated_at: new Date().toISOString()\n  }\n} }];"
+      },
+      "id": "bc45b3ca-a9f5-45f1-8398-1fecde08bb37",
+      "name": "Validar pacote gerado",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 0]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "2216260b-a5c2-43fa-ac46-47f32a59f994",
+      "name": "Responder com rascunho",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [960, 0]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook - Solicitar conteúdo": {
+      "main": [[{"node": "Normalizar e validar", "type": "main", "index": 0}]]
+    },
+    "Normalizar e validar": {
+      "main": [[{"node": "Dify - Gerar conteúdo", "type": "main", "index": 0}]]
+    },
+    "Dify - Gerar conteúdo": {
+      "main": [[{"node": "Validar pacote gerado", "type": "main", "index": 0}]]
+    },
+    "Validar pacote gerado": {
+      "main": [[{"node": "Responder com rascunho", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Sao_Paulo",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "none",
+    "saveManualExecutions": true
+  },
+  "versionId": "acff7255-8880-43ea-b809-9d544482793b",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [
+    {"name": "PromptLab", "id": "promptlab-social"},
+    {"name": "ZeloVita", "id": "zelovita-social"}
+  ]
+}
