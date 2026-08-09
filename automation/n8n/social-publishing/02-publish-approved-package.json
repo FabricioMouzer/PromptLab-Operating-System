@@ -1,0 +1,116 @@
+{
+  "name": "PromptLab Social 02 - Publicar pacote aprovado",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "promptlab-social-publish",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "d4466c0e-160d-49a2-a07e-c8a470dcde16",
+      "name": "Webhook - Publicar aprovado",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [0, 0],
+      "webhookId": "f9ed37f5-840e-4f95-a137-d5c60d5e7b67",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_WEBHOOK_CREDENTIAL",
+          "name": "PromptLab Social Webhook"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $json.body ?? $json;\nif (body.approved !== true) throw new Error('Publicação bloqueada: approved deve ser true');\nif (!['promptlab', 'zelovita'].includes(body.brand)) throw new Error('brand canônica inválida');\nif (!body.request_id) throw new Error('request_id é obrigatório');\nconst publicationType = String(body.publication_type || 'draft');\nif (!['draft', 'schedule', 'now'].includes(publicationType)) throw new Error('publication_type inválido');\nif (publicationType === 'schedule' && Number.isNaN(Date.parse(body.scheduled_at))) throw new Error('scheduled_at inválido');\nif (!Array.isArray(body.channels) || body.channels.length === 0) throw new Error('channels é obrigatório');\nconst platforms = body.channels.map(c => String(c.platform || '').toLowerCase());\nif (new Set(platforms).size !== platforms.length) throw new Error('canais duplicados');\nif (body.brand === 'zelovita' && Array.isArray(body.risk_flags) && body.risk_flags.includes('health_claim') && body.health_reviewed !== true) {\n  throw new Error('ZeloVita: alegação de saúde requer health_reviewed=true');\n}\nconst buildSettings = (channel) => {\n  if (channel.platform === 'facebook') return { __type: 'facebook', ...(channel.link_url ? { url: channel.link_url } : {}) };\n  if (channel.platform === 'instagram') return { __type: 'instagram', post_type: channel.format === 'story' ? 'story' : 'post', is_trial_reel: false, collaborators: [] };\n  if (channel.platform === 'tiktok') {\n    const privacy = channel.privacy_level || 'SELF_ONLY';\n    if (privacy !== 'SELF_ONLY' && body.tiktok_audit_confirmed !== true) throw new Error('TikTok público requer tiktok_audit_confirmed=true');\n    return {\n      __type: 'tiktok',\n      title: String(channel.title || body.topic || '').slice(0, 90),\n      privacy_level: privacy,\n      duet: Boolean(channel.duet),\n      stitch: Boolean(channel.stitch),\n      comment: channel.comment !== false,\n      autoAddMusic: channel.auto_add_music === true ? 'yes' : 'no',\n      brand_content_toggle: Boolean(channel.brand_content),\n      brand_organic_toggle: Boolean(channel.brand_organic),\n      video_made_with_ai: Boolean(channel.video_made_with_ai),\n      content_posting_method: channel.content_posting_method || (privacy === 'SELF_ONLY' ? 'UPLOAD' : 'DIRECT_POST')\n    };\n  }\n  throw new Error(`plataforma inválida: ${channel.platform}`);\n};\nconst posts = body.channels.map(channel => {\n  if (!channel.provider_integration_id) throw new Error(`provider_integration_id ausente para ${channel.platform}`);\n  const media = Array.isArray(channel.media) ? channel.media : [];\n  if (['instagram', 'tiktok'].includes(channel.platform) && media.length === 0) throw new Error(`mídia obrigatória para ${channel.platform}`);\n  for (const item of media) {\n    if (!item.id || !item.path) throw new Error(`mídia inválida para ${channel.platform}: id e path são obrigatórios`);\n  }\n  return {\n    integration: { id: channel.provider_integration_id },\n    value: [{ content: String(channel.caption || ''), image: media }],\n    settings: buildSettings(channel)\n  };\n});\nreturn [{ json: {\n  request_id: body.request_id,\n  brand: body.brand,\n  publication_type: publicationType,\n  postiz_payload: {\n    type: publicationType,\n    date: publicationType === 'schedule' ? new Date(body.scheduled_at).toISOString() : new Date().toISOString(),\n    shortLink: false,\n    tags: [],\n    posts\n  }\n} }];"
+      },
+      "id": "67b639e2-50cb-4aba-b695-ce1323b787b8",
+      "name": "Quality Gate e payload Postiz",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.postiz.com/public/v1/posts",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.postiz_payload }}",
+        "options": {
+          "timeout": 90000
+        }
+      },
+      "id": "ea67bc84-6ec6-4bb5-9df6-94e8337421d7",
+      "name": "Postiz - Criar publicação",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [480, 0],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_POSTIZ_CREDENTIAL",
+          "name": "Postiz API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const source = $('Quality Gate e payload Postiz').first().json;\nreturn [{ json: {\n  ok: true,\n  request_id: source.request_id,\n  brand: source.brand,\n  publication_type: source.publication_type,\n  postiz_result: $json,\n  processed_at: new Date().toISOString(),\n  warning: source.publication_type === 'draft' ? 'Conteúdo salvo como rascunho; não foi publicado.' : null\n} }];"
+      },
+      "id": "93a749cf-1037-42a0-8c4b-62c2e82ef27d",
+      "name": "Montar comprovante",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 0]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "13c9916c-14fc-4a6c-ab1f-9d1c56638f47",
+      "name": "Responder com comprovante",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [960, 0]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook - Publicar aprovado": {
+      "main": [[{"node": "Quality Gate e payload Postiz", "type": "main", "index": 0}]]
+    },
+    "Quality Gate e payload Postiz": {
+      "main": [[{"node": "Postiz - Criar publicação", "type": "main", "index": 0}]]
+    },
+    "Postiz - Criar publicação": {
+      "main": [[{"node": "Montar comprovante", "type": "main", "index": 0}]]
+    },
+    "Montar comprovante": {
+      "main": [[{"node": "Responder com comprovante", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Sao_Paulo",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "saveManualExecutions": true
+  },
+  "versionId": "9f92c9a9-3885-4627-af7e-8b947af5a9a9",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [
+    {"name": "PromptLab", "id": "promptlab-social"},
+    {"name": "ZeloVita", "id": "zelovita-social"}
+  ]
+}
