@@ -40,6 +40,7 @@ Cada publicação deve conter:
 - [Mecânicos automotivos](./mecanicos-automotivos/)
 - [Organizadores de eventos](./organizadores-de-eventos/)
 - [Professores](./professores/)
+- [Técnicos de suporte de TI](./tecnicos-de-suporte-de-ti/)
 - [Vendedores e empreendedores](./vendedores-e-empreendedores/)
 
 ## Regra operacional
