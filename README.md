@@ -50,6 +50,12 @@ decisions/
 templates/
 ```
 
+## Implementações em validação
+
+- [Kit técnico de IA open source](docs/technology/open-source-ai-kit/README.md)
+- [Agente de criação e publicação social](docs/agents/social-publishing-agent/README.md)
+- [Avaliação dos repositórios de automação social](docs/agents/social-publishing-agent/repository-evaluation.md)
+
 ## Princípios
 
 1. Resolver problemas reais antes de adicionar complexidade.
