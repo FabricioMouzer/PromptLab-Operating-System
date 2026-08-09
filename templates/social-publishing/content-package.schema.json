@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://promptlab.ai/schemas/social-content-package.json",
+  "title": "PromptLab Social Content Package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_id",
+    "brand",
+    "topic",
+    "language",
+    "approval_status",
+    "channels"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "brand": {
+      "type": "string",
+      "enum": ["promptlab", "zelovita"]
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 3
+    },
+    "language": {
+      "const": "pt-BR"
+    },
+    "source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "affiliate_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": ["draft", "pending", "approved", "rejected"]
+    },
+    "scheduled_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "channels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["platform", "format", "caption", "media_status"],
+        "properties": {
+          "platform": {
+            "type": "string",
+            "enum": ["instagram", "facebook", "tiktok"]
+          },
+          "format": {
+            "type": "string",
+            "enum": ["feed", "carousel", "story", "reel", "video"]
+          },
+          "caption": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cta": {
+            "type": ["string", "null"]
+          },
+          "hashtags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "media_status": {
+            "type": "string",
+            "enum": ["pending", "ready", "uploaded"]
+          },
+          "media_url": {
+            "type": ["string", "null"],
+            "format": "uri"
+          },
+          "provider_integration_id": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": ["string", "null"]
+    }
+  }
+}
