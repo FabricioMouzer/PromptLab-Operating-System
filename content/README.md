@@ -37,6 +37,7 @@ Cada publicação deve conter:
 - [Corretores de imóveis](./corretores-de-imoveis/)
 - [Fotógrafos](./fotografos/)
 - [Gestor de Projetos](./gestor-de-projetos/)
+- [Mecânicos automotivos](./mecanicos-automotivos/)
 - [Organizadores de eventos](./organizadores-de-eventos/)
 - [Professores](./professores/)
 - [Vendedores e empreendedores](./vendedores-e-empreendedores/)
