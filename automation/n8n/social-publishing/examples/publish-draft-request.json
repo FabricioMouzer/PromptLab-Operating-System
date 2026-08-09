@@ -1,0 +1,54 @@
+{
+  "request_id": "social-exemplo-001",
+  "brand": "promptlab",
+  "topic": "Exemplo seguro de publicação",
+  "approved": true,
+  "approval_status": "approved",
+  "publication_type": "draft",
+  "scheduled_at": null,
+  "risk_flags": [],
+  "health_reviewed": false,
+  "tiktok_audit_confirmed": false,
+  "channels": [
+    {
+      "platform": "facebook",
+      "format": "feed",
+      "title": "Exemplo",
+      "caption": "Texto aprovado para teste.",
+      "provider_integration_id": "SUBSTITUIR-ID-FACEBOOK-PROMPTLAB",
+      "media": []
+    },
+    {
+      "platform": "instagram",
+      "format": "feed",
+      "title": "Exemplo",
+      "caption": "Texto aprovado para teste.",
+      "provider_integration_id": "SUBSTITUIR-ID-INSTAGRAM-PROMPTLAB",
+      "media": [
+        {
+          "id": "SUBSTITUIR-ID-MIDIA-POSTIZ",
+          "path": "https://uploads.postiz.com/substituir-imagem.jpg"
+        }
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "format": "video",
+      "title": "Exemplo privado",
+      "caption": "Texto aprovado para teste privado.",
+      "provider_integration_id": "SUBSTITUIR-ID-TIKTOK-PROMPTLAB",
+      "media": [
+        {
+          "id": "SUBSTITUIR-ID-VIDEO-POSTIZ",
+          "path": "https://uploads.postiz.com/substituir-video.mp4"
+        }
+      ],
+      "privacy_level": "SELF_ONLY",
+      "content_posting_method": "UPLOAD",
+      "comment": false,
+      "duet": false,
+      "stitch": false,
+      "video_made_with_ai": false
+    }
+  ]
+}
