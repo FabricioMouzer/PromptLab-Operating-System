@@ -172,3 +172,9 @@ Adicionar geração de mídia automática e TikTok somente após esse fluxo func
 - [Documentação de provedores do Postiz](https://docs.postiz.com/providers/overview)
 - [TikTok Content Posting API](https://developers.tiktok.com/products/content-posting-api)
 - [Diretrizes do TikTok para publicação](https://developers.tiktok.com/doc/content-sharing-guidelines/)
+
+## Implementação disponível
+
+- [Pacote n8n pronto para importar](../../../automation/n8n/social-publishing/README.md)
+- [Workflow de geração](../../../automation/n8n/social-publishing/01-generate-content-package.json)
+- [Workflow de publicação aprovada](../../../automation/n8n/social-publishing/02-publish-approved-package.json)
