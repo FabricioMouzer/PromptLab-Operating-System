@@ -41,6 +41,7 @@ Cada publicação deve conter:
 - [Mecânicos automotivos](./mecanicos-automotivos/)
 - [Organizadores de eventos](./organizadores-de-eventos/)
 - [Professores](./professores/)
+- [Síndicos e administradores de condomínio](./sindicos-e-administradores-de-condominio/)
 - [Técnicos de suporte de TI](./tecnicos-de-suporte-de-ti/)
 - [Vendedores e empreendedores](./vendedores-e-empreendedores/)
 
