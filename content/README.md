@@ -34,6 +34,7 @@ Cada publicação deve conter:
 - [Arquitetos](./arquitetos/)
 - [Assistentes administrativos](./assistentes-administrativos/)
 - [Chefs e cozinheiros](./chefs-e-cozinheiros/)
+- [Contadores](./contadores/)
 - [Corretores de imóveis](./corretores-de-imoveis/)
 - [Fotógrafos](./fotografos/)
 - [Gestor de Projetos](./gestor-de-projetos/)
