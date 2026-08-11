@@ -33,6 +33,7 @@ Cada publicação deve conter:
 
 - [Arquitetos](./arquitetos/)
 - [Assistentes administrativos](./assistentes-administrativos/)
+- [Barbeiros e cabeleireiros](./barbeiros-e-cabeleireiros/)
 - [Chefs e cozinheiros](./chefs-e-cozinheiros/)
 - [Contadores](./contadores/)
 - [Corretores de imóveis](./corretores-de-imoveis/)
