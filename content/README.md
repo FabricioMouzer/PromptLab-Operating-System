@@ -37,6 +37,7 @@ Cada publicação deve conter:
 - [Chefs e cozinheiros](./chefs-e-cozinheiros/)
 - [Contadores](./contadores/)
 - [Corretores de imóveis](./corretores-de-imoveis/)
+- [Designers gráficos](./designers-graficos/)
 - [Fotógrafos](./fotografos/)
 - [Gestor de Projetos](./gestor-de-projetos/)
 - [Mecânicos automotivos](./mecanicos-automotivos/)
