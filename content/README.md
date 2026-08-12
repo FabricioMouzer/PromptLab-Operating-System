@@ -1,36 +1,16 @@
 # Biblioteca Editorial PromptLab.AI
 
-Este diretório registra todos os conteúdos publicados pela PromptLab.AI, organizados por profissão.
+Este diretório registra os conteúdos publicados pela PromptLab.AI, organizados por profissão.
 
 ## Estrutura padrão
 
-Cada profissão possui uma pasta própria:
+Cada profissão possui uma pasta própria em `content/<profissao>/`, com um `README.md` e arquivos de publicação no padrão `YYYY-MM-DD-HHMM-<tema>.md`.
 
-```text
-content/
-└── <profissao>/
-    ├── README.md
-    └── YYYY-MM-DD-HHMM-<tema>.md
-```
-
-Cada publicação deve conter:
-
-- profissão e público-alvo;
-- problema resolvido;
-- benefício esperado;
-- prompt completo pronto para copiar e colar;
-- modo de uso;
-- prompt do Reel para HeyGen;
-- capa e legenda do post;
-- sequência completa de Stories;
-- CTA;
-- hashtags;
-- ferramenta recomendada para cada peça;
-- oportunidade de monetização;
-- data e horário da publicação.
+Cada publicação deve conter profissão e público-alvo, problema resolvido, benefício esperado, prompt completo, modo de uso, prompt do Reel para HeyGen, capa e legenda do post, Stories, CTA, hashtags, ferramentas, monetização, data e horário.
 
 ## Profissões já documentadas
 
+- [Agentes de viagens e consultores de turismo](./agentes-de-viagens/)
 - [Arquitetos](./arquitetos/)
 - [Assistentes administrativos](./assistentes-administrativos/)
 - [Barbeiros e cabeleireiros](./barbeiros-e-cabeleireiros/)
@@ -50,4 +30,4 @@ Cada publicação deve conter:
 
 ## Regra operacional
 
-Sempre que uma nova publicação for criada, ela deve ser salva no mesmo dia dentro da pasta da profissão correspondente. Caso a profissão ainda não exista, uma nova pasta deve ser criada usando nome em minúsculas e hífens.
+Sempre que uma nova publicação for criada, ela deve ser salva no mesmo dia dentro da pasta correspondente. Caso a profissão ainda não exista, criar a pasta usando nome em minúsculas e hífens.
