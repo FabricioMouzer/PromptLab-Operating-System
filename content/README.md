@@ -18,6 +18,7 @@ Cada publicação deve conter profissão e público-alvo, problema resolvido, be
 - [Contadores](./contadores/)
 - [Corretores de imóveis](./corretores-de-imoveis/)
 - [Designers gráficos](./designers-graficos/)
+- [Desenvolvedores de software](./desenvolvedores-de-software/)
 - [Fotógrafos](./fotografos/)
 - [Gestor de Projetos](./gestor-de-projetos/)
 - [Mecânicos automotivos](./mecanicos-automotivos/)
