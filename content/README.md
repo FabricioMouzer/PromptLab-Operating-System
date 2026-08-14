@@ -23,6 +23,7 @@ Cada publicação deve conter profissão e público-alvo, problema resolvido, be
 - [Gestor de Projetos](./gestor-de-projetos/)
 - [Mecânicos automotivos](./mecanicos-automotivos/)
 - [Organizadores de eventos](./organizadores-de-eventos/)
+- [Personal Organizers](./personal-organizers/)
 - [Professores](./professores/)
 - [Recrutadores e profissionais de RH](./recrutadores-e-rh/)
 - [Síndicos e administradores de condomínio](./sindicos-e-administradores-de-condominio/)
