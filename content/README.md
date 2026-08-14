@@ -25,6 +25,7 @@ Cada publicação deve conter profissão e público-alvo, problema resolvido, be
 - [Organizadores de eventos](./organizadores-de-eventos/)
 - [Personal Organizers](./personal-organizers/)
 - [Professores](./professores/)
+- [Recepcionistas de hotel](./recepcionistas-de-hotel/)
 - [Recrutadores e profissionais de RH](./recrutadores-e-rh/)
 - [Síndicos e administradores de condomínio](./sindicos-e-administradores-de-condominio/)
 - [Técnicos de suporte de TI](./tecnicos-de-suporte-de-ti/)
