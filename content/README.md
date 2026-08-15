@@ -21,6 +21,7 @@ Cada publicação deve conter profissão e público-alvo, problema resolvido, be
 - [Desenvolvedores de software](./desenvolvedores-de-software/)
 - [Fotógrafos](./fotografos/)
 - [Gestor de Projetos](./gestor-de-projetos/)
+- [Gestores de tráfego pago](./gestores-de-trafego-pago/)
 - [Mecânicos automotivos](./mecanicos-automotivos/)
 - [Organizadores de eventos](./organizadores-de-eventos/)
 - [Personal Organizers](./personal-organizers/)
