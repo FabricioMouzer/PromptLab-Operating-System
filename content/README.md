@@ -11,6 +11,7 @@ Cada publicação deve conter profissão e público-alvo, problema resolvido, be
 ## Profissões já documentadas
 
 - [Agentes de viagens e consultores de turismo](./agentes-de-viagens/)
+- [Analistas de e-commerce](./analistas-de-ecommerce/)
 - [Arquitetos](./arquitetos/)
 - [Assistentes administrativos](./assistentes-administrativos/)
 - [Barbeiros e cabeleireiros](./barbeiros-e-cabeleireiros/)
