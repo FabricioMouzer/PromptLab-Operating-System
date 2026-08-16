@@ -16,6 +16,7 @@ Cada publicação deve conter profissão e público-alvo, problema resolvido, be
 - [Assistentes administrativos](./assistentes-administrativos/)
 - [Barbeiros e cabeleireiros](./barbeiros-e-cabeleireiros/)
 - [Chefs e cozinheiros](./chefs-e-cozinheiros/)
+- [Compradores e analistas de suprimentos](./compradores-e-analistas-de-suprimentos/)
 - [Contadores](./contadores/)
 - [Corretores de imóveis](./corretores-de-imoveis/)
 - [Designers gráficos](./designers-graficos/)
