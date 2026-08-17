@@ -24,6 +24,7 @@ Cada publicação deve conter profissão e público-alvo, problema resolvido, be
 - [Fotógrafos](./fotografos/)
 - [Gerentes de restaurante](./gerentes-de-restaurante/)
 - [Gestor de Projetos](./gestor-de-projetos/)
+- [Gestores de redes sociais](./gestores-de-redes-sociais/)
 - [Gestores de tráfego pago](./gestores-de-trafego-pago/)
 - [Mecânicos automotivos](./mecanicos-automotivos/)
 - [Organizadores de eventos](./organizadores-de-eventos/)
