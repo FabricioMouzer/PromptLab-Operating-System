@@ -33,6 +33,7 @@ Cada publicação deve conter profissão e público-alvo, problema resolvido, be
 - [Recrutadores e profissionais de RH](./recrutadores-e-rh/)
 - [Síndicos e administradores de condomínio](./sindicos-e-administradores-de-condominio/)
 - [Técnicos de suporte de TI](./tecnicos-de-suporte-de-ti/)
+- [Videomakers e editores de vídeo](./videomakers-e-editores-de-video/)
 - [Vendedores e empreendedores](./vendedores-e-empreendedores/)
 
 ## Regra operacional
