@@ -1,0 +1,275 @@
+{
+ "conta": "17841438760193489",
+ "planilha": {
+  "slug": "8c24b1d7-bf0f-408f-9a3f-3bf92bd3d562",
+  "node": "14d3d7d2-390c",
+  "aba": "ZeloVita"
+ },
+ "aprovado": "usuário aprovou a semana inteira em 13/11 08:52",
+ "itens": [
+  {
+   "at": "2026-11-14T09:00:00[America/Sao_Paulo]",
+   "tipo": "story",
+   "action": "create_story",
+   "params": {
+    "image_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/story-2026-11-14.jpg"
+   },
+   "linha_planilha_tema": "Autocuidado explicado, todos os dias"
+  },
+  {
+   "at": "2026-11-14T12:00:00[America/Sao_Paulo]",
+   "tipo": "reel",
+   "action": "create_video_post",
+   "params": {
+    "video_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/reel-2026-11-14.mp4",
+    "caption": "Você passa os produtos na ordem certa? 🌿\n\nA regra é simples: do mais leve ao mais denso. De manhã, o protetor solar sempre fecha a rotina.\n\n☀ Manhã: limpeza → sérum → hidratante → protetor\n☾ Noite: limpeza → tratamento → hidratante\n\nE se você está começando: limpeza + hidratante + protetor já é uma rotina completa.\n\n📌 Salve para montar a sua\n💬 Qual passo você costuma pular?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita",
+    "share_to_feed": true
+   },
+   "linha_planilha_tema": "A ordem certa do skincare"
+  },
+  {
+   "at": "2026-11-14T19:00:00[America/Sao_Paulo]",
+   "tipo": "carrossel",
+   "action": "create_carousel_post",
+   "params": {
+    "image_urls": [
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/01-ordem-skincare/01-ordem-skincare-01.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/01-ordem-skincare/01-ordem-skincare-02.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/01-ordem-skincare/01-ordem-skincare-03.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/01-ordem-skincare/01-ordem-skincare-04.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/01-ordem-skincare/01-ordem-skincare-05.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/01-ordem-skincare/01-ordem-skincare-06.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/01-ordem-skincare/01-ordem-skincare-07.jpg"
+    ],
+    "caption": "Você passa os produtos na ordem certa? 🌿\n\nA regra é simples: do mais leve ao mais denso. De manhã, o protetor solar sempre fecha a rotina.\n\n☀ Manhã: limpeza → sérum → hidratante → protetor\n☾ Noite: limpeza → tratamento → hidratante\n\nE se você está começando: limpeza + hidratante + protetor já é uma rotina completa.\n\n📌 Salve para montar a sua\n💬 Qual passo você costuma pular?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita"
+   },
+   "linha_planilha_tema": "A ordem certa do skincare"
+  },
+  {
+   "at": "2026-11-15T09:00:00[America/Sao_Paulo]",
+   "tipo": "story",
+   "action": "create_story",
+   "params": {
+    "image_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/story-2026-11-15.jpg"
+   },
+   "linha_planilha_tema": "Protetor também em dia nublado"
+  },
+  {
+   "at": "2026-11-15T12:00:00[America/Sao_Paulo]",
+   "tipo": "reel",
+   "action": "create_video_post",
+   "params": {
+    "video_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/reel-2026-11-15.mp4",
+    "caption": "Na hora de escolher o protetor solar, o FPS é só o começo. ☀️\n\nOlhe também:\n✅ Proteção UVA (ou PPD) no rótulo\n✅ Textura que combina com sua pele\n✅ Quantidade certa: regra dos dois dedos\n\nE reaplique a cada 2 horas quando estiver no sol.\n\n📌 Salve para a próxima compra\n💬 Você usa protetor todo dia ou só na praia?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita #protetorsolar",
+    "share_to_feed": true
+   },
+   "linha_planilha_tema": "Protetor solar: o que olhar antes de comprar"
+  },
+  {
+   "at": "2026-11-15T19:00:00[America/Sao_Paulo]",
+   "tipo": "carrossel",
+   "action": "create_carousel_post",
+   "params": {
+    "image_urls": [
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/02-protetor-solar/02-protetor-solar-01.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/02-protetor-solar/02-protetor-solar-02.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/02-protetor-solar/02-protetor-solar-03.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/02-protetor-solar/02-protetor-solar-04.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/02-protetor-solar/02-protetor-solar-05.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/02-protetor-solar/02-protetor-solar-06.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/02-protetor-solar/02-protetor-solar-07.jpg"
+    ],
+    "caption": "Na hora de escolher o protetor solar, o FPS é só o começo. ☀️\n\nOlhe também:\n✅ Proteção UVA (ou PPD) no rótulo\n✅ Textura que combina com sua pele\n✅ Quantidade certa: regra dos dois dedos\n\nE reaplique a cada 2 horas quando estiver no sol.\n\n📌 Salve para a próxima compra\n💬 Você usa protetor todo dia ou só na praia?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita #protetorsolar"
+   },
+   "linha_planilha_tema": "Protetor solar: o que olhar antes de comprar"
+  },
+  {
+   "at": "2026-11-16T09:00:00[America/Sao_Paulo]",
+   "tipo": "story",
+   "action": "create_story",
+   "params": {
+    "image_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/story-2026-11-16.jpg"
+   },
+   "linha_planilha_tema": "A ordem dos ingredientes diz muito"
+  },
+  {
+   "at": "2026-11-16T12:00:00[America/Sao_Paulo]",
+   "tipo": "reel",
+   "action": "create_video_post",
+   "params": {
+    "video_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/reel-2026-11-16.mp4",
+    "caption": "Você lê o rótulo antes de comprar um cosmético? 🔍\n\n1️⃣ Os ingredientes vêm do mais para o menos concentrado\n2️⃣ Abaixo de 1%, a ordem é livre\n3️⃣ Os nomes técnicos estão em latim/inglês (Aqua = água)\n4️⃣ Parfum é o perfume, atenção se tiver pele sensível\n5️⃣ Porcentagem alta nem sempre é melhor\n\n📌 Salve para usar na próxima compra\n💬 Qual ingrediente você quer que a gente explique?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita",
+    "share_to_feed": true
+   },
+   "linha_planilha_tema": "Como ler o rótulo de um cosmético"
+  },
+  {
+   "at": "2026-11-16T19:00:00[America/Sao_Paulo]",
+   "tipo": "carrossel",
+   "action": "create_carousel_post",
+   "params": {
+    "image_urls": [
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/07-rotulo-inci/07-rotulo-inci-01.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/07-rotulo-inci/07-rotulo-inci-02.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/07-rotulo-inci/07-rotulo-inci-03.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/07-rotulo-inci/07-rotulo-inci-04.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/07-rotulo-inci/07-rotulo-inci-05.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/07-rotulo-inci/07-rotulo-inci-06.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/07-rotulo-inci/07-rotulo-inci-07.jpg"
+    ],
+    "caption": "Você lê o rótulo antes de comprar um cosmético? 🔍\n\n1️⃣ Os ingredientes vêm do mais para o menos concentrado\n2️⃣ Abaixo de 1%, a ordem é livre\n3️⃣ Os nomes técnicos estão em latim/inglês (Aqua = água)\n4️⃣ Parfum é o perfume, atenção se tiver pele sensível\n5️⃣ Porcentagem alta nem sempre é melhor\n\n📌 Salve para usar na próxima compra\n💬 Qual ingrediente você quer que a gente explique?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita"
+   },
+   "linha_planilha_tema": "Como ler o rótulo de um cosmético"
+  },
+  {
+   "at": "2026-11-17T09:00:00[America/Sao_Paulo]",
+   "tipo": "story",
+   "action": "create_story",
+   "params": {
+    "image_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/story-2026-11-17.jpg"
+   },
+   "linha_planilha_tema": "Lavar o rosto com água quente"
+  },
+  {
+   "at": "2026-11-17T12:00:00[America/Sao_Paulo]",
+   "tipo": "reel",
+   "action": "create_video_post",
+   "params": {
+    "video_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/reel-2026-11-17.mp4",
+    "caption": "Você comete algum desses erros? 👀\n\n1️⃣ Dormir de maquiagem\n2️⃣ Lavar o rosto com água muito quente\n3️⃣ Pular o protetor no dia nublado\n4️⃣ Usar muitos ativos ao mesmo tempo\n5️⃣ Esfoliar demais\n\nCorrigir esses hábitos já faz diferença, sem gastar nada.\n\n📌 Salve e envie para quem precisa ver\n💬 Qual deles é o seu?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita",
+    "share_to_feed": true
+   },
+   "linha_planilha_tema": "5 erros que prejudicam sua pele"
+  },
+  {
+   "at": "2026-11-17T19:00:00[America/Sao_Paulo]",
+   "tipo": "carrossel",
+   "action": "create_carousel_post",
+   "params": {
+    "image_urls": [
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/04-erros-pele/04-erros-pele-01.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/04-erros-pele/04-erros-pele-02.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/04-erros-pele/04-erros-pele-03.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/04-erros-pele/04-erros-pele-04.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/04-erros-pele/04-erros-pele-05.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/04-erros-pele/04-erros-pele-06.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/04-erros-pele/04-erros-pele-07.jpg"
+    ],
+    "caption": "Você comete algum desses erros? 👀\n\n1️⃣ Dormir de maquiagem\n2️⃣ Lavar o rosto com água muito quente\n3️⃣ Pular o protetor no dia nublado\n4️⃣ Usar muitos ativos ao mesmo tempo\n5️⃣ Esfoliar demais\n\nCorrigir esses hábitos já faz diferença, sem gastar nada.\n\n📌 Salve e envie para quem precisa ver\n💬 Qual deles é o seu?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita"
+   },
+   "linha_planilha_tema": "5 erros que prejudicam sua pele"
+  },
+  {
+   "at": "2026-11-18T09:00:00[America/Sao_Paulo]",
+   "tipo": "story",
+   "action": "create_story",
+   "params": {
+    "image_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/story-2026-11-18.jpg"
+   },
+   "linha_planilha_tema": "Hidrate com a pele úmida"
+  },
+  {
+   "at": "2026-11-18T12:00:00[America/Sao_Paulo]",
+   "tipo": "reel",
+   "action": "create_video_post",
+   "params": {
+    "video_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/reel-2026-11-18.mp4",
+    "caption": "Passar hidratante e continuar com a pele seca? O problema pode ser o momento. 🌿\n\n✅ Passe logo depois do banho, com a pele úmida\n✅ Banho morno e curto\n✅ Capriche em cotovelos, joelhos, canelas e pés\n✅ Escolha a textura pelo seu tipo de pele\n\n📌 Salve para lembrar\n💬 Você hidrata o corpo todo dia?\n\n#hidratacao #peleseca #autocuidado #bemestar #cuidadoscomocorpo #rotina #dicasdebeleza #zelovita",
+    "share_to_feed": true
+   },
+   "linha_planilha_tema": "Hidratante corporal: o segredo é o momento"
+  },
+  {
+   "at": "2026-11-18T19:00:00[America/Sao_Paulo]",
+   "tipo": "carrossel",
+   "action": "create_carousel_post",
+   "params": {
+    "image_urls": [
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/05-hidratacao-corpo/05-hidratacao-corpo-01.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/05-hidratacao-corpo/05-hidratacao-corpo-02.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/05-hidratacao-corpo/05-hidratacao-corpo-03.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/05-hidratacao-corpo/05-hidratacao-corpo-04.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/05-hidratacao-corpo/05-hidratacao-corpo-05.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/05-hidratacao-corpo/05-hidratacao-corpo-06.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/05-hidratacao-corpo/05-hidratacao-corpo-07.jpg"
+    ],
+    "caption": "Passar hidratante e continuar com a pele seca? O problema pode ser o momento. 🌿\n\n✅ Passe logo depois do banho, com a pele úmida\n✅ Banho morno e curto\n✅ Capriche em cotovelos, joelhos, canelas e pés\n✅ Escolha a textura pelo seu tipo de pele\n\n📌 Salve para lembrar\n💬 Você hidrata o corpo todo dia?\n\n#hidratacao #peleseca #autocuidado #bemestar #cuidadoscomocorpo #rotina #dicasdebeleza #zelovita"
+   },
+   "linha_planilha_tema": "Hidratante corporal: o segredo é o momento"
+  },
+  {
+   "at": "2026-11-19T09:00:00[America/Sao_Paulo]",
+   "tipo": "story",
+   "action": "create_story",
+   "params": {
+    "image_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/story-2026-11-19.jpg"
+   },
+   "linha_planilha_tema": "Capriche em cotovelos, joelhos e pés"
+  },
+  {
+   "at": "2026-11-19T12:00:00[America/Sao_Paulo]",
+   "tipo": "reel",
+   "action": "create_video_post",
+   "params": {
+    "video_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/reel-2026-11-19.mp4",
+    "caption": "#publi | Link de afiliado\n\nLembra da dica de ontem? Hidratante logo depois do banho. 🌿\n\nO Kit Hidratação Corporal da Principia traz as duas texturas:\n✅ Loção LH-02 (500 ml) para o corpo todo\n✅ Creme CH-02 (454 g) para as áreas mais secas\n✅ Mais de 6 mil vendas\n\n🛒 Link na bio → Indicações ZeloVita (preços podem mudar)\n💬 Você prefere loção ou creme?\n\n#hidratacao #peleseca #autocuidado #bemestar #cuidadoscomocorpo #rotina #dicasdebeleza #zelovita #principia",
+    "share_to_feed": true
+   },
+   "linha_planilha_tema": "Kit Hidratação Corporal Principia"
+  },
+  {
+   "at": "2026-11-19T19:00:00[America/Sao_Paulo]",
+   "tipo": "carrossel",
+   "action": "create_carousel_post",
+   "params": {
+    "image_urls": [
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/06-principia-corpo/06-principia-corpo-01.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/06-principia-corpo/06-principia-corpo-02.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/06-principia-corpo/06-principia-corpo-03.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/06-principia-corpo/06-principia-corpo-04.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/06-principia-corpo/06-principia-corpo-05.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/06-principia-corpo/06-principia-corpo-06.jpg"
+    ],
+    "caption": "#publi | Link de afiliado\n\nLembra da dica de ontem? Hidratante logo depois do banho. 🌿\n\nO Kit Hidratação Corporal da Principia traz as duas texturas:\n✅ Loção LH-02 (500 ml) para o corpo todo\n✅ Creme CH-02 (454 g) para as áreas mais secas\n✅ Mais de 6 mil vendas\n\n🛒 Link na bio → Indicações ZeloVita (preços podem mudar)\n💬 Você prefere loção ou creme?\n\n#hidratacao #peleseca #autocuidado #bemestar #cuidadoscomocorpo #rotina #dicasdebeleza #zelovita #principia"
+   },
+   "linha_planilha_tema": "Kit Hidratação Corporal Principia"
+  },
+  {
+   "at": "2026-11-20T09:00:00[America/Sao_Paulo]",
+   "tipo": "story",
+   "action": "create_story",
+   "params": {
+    "image_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/story-2026-11-20.jpg"
+   },
+   "linha_planilha_tema": "4 achados para pele, corpo e rotina"
+  },
+  {
+   "at": "2026-11-20T12:00:00[America/Sao_Paulo]",
+   "tipo": "reel",
+   "action": "create_video_post",
+   "params": {
+    "video_url": "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/semana1/reel-2026-11-20.mp4",
+    "caption": "#publi | Link de afiliado\n\n4 achados da curadoria ZeloVita 🌿\n\n1️⃣ Kit Primeira Rotina Principia: skincare completo para começar\n2️⃣ Ampoule Centella SKIN1004: sérum facial com mais de 20 mil vendas\n3️⃣ Kit Hidratação Corporal Principia: loção + creme\n4️⃣ Organizador giratório: cosméticos e perfumes à mão\n\n🛒 Link na bio → Indicações ZeloVita (preços podem mudar)\n💬 Qual deles você levaria?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita #achadinhos #achadosshopee",
+    "share_to_feed": true
+   },
+   "linha_planilha_tema": "4 achados da curadoria"
+  },
+  {
+   "at": "2026-11-20T19:00:00[America/Sao_Paulo]",
+   "tipo": "carrossel",
+   "action": "create_carousel_post",
+   "params": {
+    "image_urls": [
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/08-achados-curadoria/08-achados-curadoria-01.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/08-achados-curadoria/08-achados-curadoria-02.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/08-achados-curadoria/08-achados-curadoria-03.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/08-achados-curadoria/08-achados-curadoria-04.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/08-achados-curadoria/08-achados-curadoria-05.jpg",
+     "https://raw.githubusercontent.com/FabricioMouzer/PromptLab-Operating-System/instagram-posts/content/instagram/zelovita-2026-11/imagens/08-achados-curadoria/08-achados-curadoria-06.jpg"
+    ],
+    "caption": "#publi | Link de afiliado\n\n4 achados da curadoria ZeloVita 🌿\n\n1️⃣ Kit Primeira Rotina Principia: skincare completo para começar\n2️⃣ Ampoule Centella SKIN1004: sérum facial com mais de 20 mil vendas\n3️⃣ Kit Hidratação Corporal Principia: loção + creme\n4️⃣ Organizador giratório: cosméticos e perfumes à mão\n\n🛒 Link na bio → Indicações ZeloVita (preços podem mudar)\n💬 Qual deles você levaria?\n\n#skincare #cuidadoscomapele #rotinadeskincare #autocuidado #bemestar #pele #dicasdebeleza #zelovita #achadinhos #achadosshopee"
+   },
+   "linha_planilha_tema": "4 achados da curadoria"
+  }
+ ]
+}
