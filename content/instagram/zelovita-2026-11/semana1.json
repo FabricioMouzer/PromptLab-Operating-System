@@ -26,13 +26,13 @@
   {
     "date": "2026-11-16",
     "dia": "Seg 16/11",
-    "carousel": "03-kit-principia",
-    "tema": "Kit Principia: rotina em 4 passos",
-    "produto": "Kit Primeira Rotina Avançada · Principia",
+    "carousel": "07-rotulo-inci",
+    "tema": "Como ler o rótulo de um cosmético",
+    "produto": null,
     "story": {
-      "kicker": "DICA DO DIA",
-      "title": "Comece com o básico",
-      "body": "Limpeza, sérum e protetor já resolvem muito. Hoje às 19h: um kit com os 4 passos."
+      "kicker": "VOCÊ LÊ O RÓTULO?",
+      "title": "A ordem dos ingredientes diz muito",
+      "body": "O primeiro da lista é o que tem mais no produto. Hoje às 19h: como ler o rótulo."
     }
   },
   {
@@ -62,13 +62,13 @@
   {
     "date": "2026-11-19",
     "dia": "Qui 19/11",
-    "carousel": "06-nivea-soft-milk",
-    "tema": "Kit NIVEA Soft Milk",
-    "produto": "Kit NIVEA Loção Hidratante Soft Milk 2x400 ml",
+    "carousel": "06-principia-corpo",
+    "tema": "Kit Hidratação Corporal Principia",
+    "produto": "Kit Hidratação Corporal Dupla · Principia",
     "story": {
       "kicker": "PELE SECA?",
       "title": "Capriche em cotovelos, joelhos e pés",
-      "body": "São as áreas que mais ressecam. Hoje às 19h: uma loção para pele seca."
+      "body": "São as áreas que mais ressecam. Hoje às 19h: um kit com loção e creme."
     }
   },
   {
@@ -76,7 +76,7 @@
     "dia": "Sex 20/11",
     "carousel": "08-achados-curadoria",
     "tema": "4 achados da curadoria",
-    "produto": "Kit Principia · Base Retinol Payot · Kit NIVEA · Pochete esportiva",
+    "produto": "Kit Principia rotina · Ampoule SKIN1004 · Kit Principia corpo · Organizador giratório",
     "story": {
       "kicker": "SEXTOU",
       "title": "4 achados para pele, corpo e rotina",
