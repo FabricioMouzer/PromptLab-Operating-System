@@ -117,7 +117,7 @@ POSTS = [
     "body": "Aplique logo após o banho, com a pele ainda úmida, e capriche em cotovelos, joelhos e pés."},
    CTA_SHOP,
   ],
-  "caption": "#publi | Link de afiliado\n\nLembra da dica de domingo? Hidratante logo depois do banho. 🌿\n\nPara quem tem pele seca no corpo, uma escolha prática é o kit com 2 loções NIVEA Soft Milk de 400 ml:\n✅ Ácido hialurônico e manteiga de karité\n✅ Indicada para pele seca\n✅ Loja oficial, mais de 3 mil vendas\n\n🛒 Link na bio → Indicações ZeloVita (preços podem mudar)\n💬 Qual hidratante você usa hoje?\n\n" + TAGS_BODY + " #nivea"},
+  "caption": "#publi | Link de afiliado\n\nLembra da dica de ontem? Hidratante logo depois do banho. 🌿\n\nPara quem tem pele seca no corpo, uma escolha prática é o kit com 2 loções NIVEA Soft Milk de 400 ml:\n✅ Ácido hialurônico e manteiga de karité\n✅ Indicada para pele seca\n✅ Loja oficial, mais de 3 mil vendas\n\n🛒 Link na bio → Indicações ZeloVita (preços podem mudar)\n💬 Qual hidratante você usa hoje?\n\n" + TAGS_BODY + " #nivea"},
 
  {"id": "07-rotulo-inci", "when": "2026-11-26T19:00:00[America/Sao_Paulo]", "label": "Qui 26/11 · 19h",
   "slides": [
